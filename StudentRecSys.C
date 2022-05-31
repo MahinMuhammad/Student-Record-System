@@ -65,8 +65,12 @@ bool addStudent()
         {
             printf("\nEnter ID:");
             scanf("%s", dataListArr[i].id);
+            fflush(stdin); //flushes the input buffer, skiping next scanf with "%[^\n]%*c" can be avoided 
+
+            /* [] scanset character, ^\n tells to take input until newline doesn’t get encountered, %*c reads newline character and here used * indicates that this newline character is discarded */
             printf("\nEnter Name:");
-            scanf("%s", dataListArr[i].name);
+            scanf("%[^\n]%*c", dataListArr[i].name); 
+            
             printf("\nEnter CGPA:");
             scanf("%f", &dataListArr[i].cgpa);
             dataListPointer[i] = &dataListArr[i];
