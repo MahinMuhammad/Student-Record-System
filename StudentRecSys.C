@@ -45,7 +45,7 @@ void showAllStudent()
         {
             printf("\nId: %s" , dataListArr[i].id);
             printf(" Name: %s" , dataListArr[i].name);
-            printf(" CGPA: %f\n" , dataListArr[i].cgpa);
+            printf(" CGPA: %.2f\n" , dataListArr[i].cgpa);
             flag = true;
         }
     }
