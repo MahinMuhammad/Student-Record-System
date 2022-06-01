@@ -125,8 +125,8 @@ int main()
     while(run)
     {
         printf("\n-------------Menu---------------\n");
-        printf("\n1.All Students\n");
-        printf("2.New Student\n");
+        printf("\n1.Show Students List\n");
+        printf("2.Add Student\n");
         printf("3.Remove Student\n");
         printf("4.Exit Program\n");
         printf("Choice:");
